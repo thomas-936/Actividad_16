@@ -22,4 +22,20 @@ def Sumar():
         num2 = float(entrada2.get())
         resultado.config(text=f"Resultado:{num1+num2} ")
     except ValueError:
-        resultado.config(text="Error... Ingresa número validos")
+        resultado.config(text="Error... Ingresa números validos")
+
+def Restar():
+    try:
+        num1 = float(entrada1.get())
+        num2 = float(entrada2.get())
+        resultado.config(text=f"Resultado: {num1-num2}")
+    except ValueError:
+        resultado.config(text="Error... Ingresa números validos")
+
+def Multiplicar():
+    try:
+        num1 = float(entrada1.get())
+        num2 = float(entrada2.get())
+        resultado.config(text=f"Resultado: {num1*num2}")
+    except ValueError:
+        resultado.config(text="Error... Ingresa números validos")
